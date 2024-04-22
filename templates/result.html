@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #2c3e50, #1a1a1a, #4a235a, #4d5656); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background: linear-gradient(135deg, #2c3e50, #1a1a1a, #4a235a, #4d5656); /* Dark gradient background */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            text-align: center;
+        }
+
+        h2 {
+            color: #ffffff; /* White heading color */
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #ffffff; /* White paragraph color */
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .notice {
+            font-size: 32px; /* Larger font size for notice */
+            font-weight: bold; /* Bold text for emphasis */
+            color: #ffffff; /* White color for high contrast */
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px 20px; /* Padding for the notice */
+            margin-bottom: 20px;
+            text-transform: uppercase; /* Uppercase text */
+        }
+
+        a {
+            color: #ffffff; /* White link color */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #cccccc; /* Light gray on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="notice">Important Notice</div>
+        <h2>Prediction Result</h2>
+        <p>{{ result }}</p>
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>
